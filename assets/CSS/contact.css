@@ -1,0 +1,221 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.topbar {
+  background-color: #090d16;
+  color: rgb(250, 221, 185);
+  height: 50px;
+}
+
+.topbar .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+
+}
+
+.email {
+  padding-right: 500px;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  display: flex;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+}
+.navlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  height: 50px;
+  width: 50px;
+  color: white;
+  background-color: #090d16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(253, 175, 29);
+  border-radius: 7px;
+}
+
+.khatri {
+  color: #090d16;
+  font-size: 1rem;
+  font-weight: 800;
+  padding-left: 13px;
+}
+
+.Transtxt {
+  color: rgb(253, 175, 29);
+  font-weight: 300;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0e1420;
+}
+
+.navsection a{
+  display: inline;
+  padding-left: 20px;
+}
+
+.navsection a:hover{
+  transition: all 0.5s ease-in;
+  text-decoration: underline;
+  color: rgb(253, 175, 29);
+}
+
+.Bookbtn {
+  height: 40px;
+  width: 110px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #090d16;
+  color: white;
+  border: 1px solid #090d16;
+  border-radius: 7px;
+}
+
+.Bookbtn:hover{
+  transition: all 0.5 ease-in;
+  background-color: rgba(9, 13, 22, 0.9);
+}
+
+
+/* Main Body */
+
+
+
+
+hr {
+  height: 4px;
+  width: 100%;
+}
+
+/* footer */
+
+.footer {
+    background-color: #090d16;
+    color: #cbd5e1;
+    padding: 70px 0 30px;
+    border-top: 3px solid orange;
+}
+
+.footergrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    margin: 0px 50px 50px 50px;
+}
+
+.footerlogo {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.footerlogo i {
+    color: orange;
+}
+
+.footercolumn p {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 12px;
+}
+
+.sociallinks a {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sociallinks a:hover {
+    background: orange;
+    color: #090d16;
+}
+
+.footercolumn h4 {
+    color: white;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+.footercolumn ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footercolumn ul li a {
+    color: gray;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footercolumn ul li a:hover {
+    color: orange;
+    padding-left: 5px;
+}
+
+.footercolumn ul li {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.copyright {
+  padding-top: 10px;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.develpermark {
+  padding-top: 5px;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.develpermark strong {
+  color: orange;
+}

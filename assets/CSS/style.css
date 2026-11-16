@@ -1,0 +1,502 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.topbar {
+  background-color: #090d16;
+  color: rgb(250, 221, 185);
+  height: 50px;
+}
+
+.topbar .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+
+}
+
+.email {
+  padding-right: 500px;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  display: flex;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+}
+.navlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  height: 50px;
+  width: 50px;
+  color: white;
+  background-color: #090d16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(253, 175, 29);
+  border-radius: 7px;
+}
+
+.khatri {
+  color: #090d16;
+  font-size: 1rem;
+  font-weight: 800;
+  padding-left: 13px;
+}
+
+.Transtxt {
+  color: rgb(253, 175, 29);
+  font-weight: 300;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0e1420;
+}
+
+.navsection a{
+  display: inline;
+  padding-left: 20px;
+}
+
+.navsection a:hover{
+  transition: all 0.5s ease-in;
+  text-decoration: underline;
+  color: rgb(253, 175, 29);
+}
+
+.Bookbtn {
+  height: 40px;
+  width: 110px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #090d16;
+  color: white;
+  border: 1px solid #090d16;
+  border-radius: 7px;
+}
+
+.Bookbtn:hover{
+  transition: all 0.5 ease-in;
+  background-color: rgba(9, 13, 22, 0.9);
+}
+
+
+/* Hero Section */
+
+.herosection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center 60%;
+  background-image: url(../Images/Bus.jpg);
+  background-repeat: no-repeat;
+}
+
+
+.premium {
+  height: 40px;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(187, 169, 4);
+  background-color: rgba(255, 255, 0, 0.1);
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  border-color: yellow;
+  border: 10px;
+  border-radius: 30px;
+}
+
+/* Form Box For Booking */
+
+.outersearchbx{
+  height: 200px;
+  display: flex;
+  background-color: orange;
+  border-radius: 20px;
+  margin: -70px 100px;
+}
+
+.innersearchbox {
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  margin-top: 5px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.planstate{
+  padding: 50px 0px 10px 30px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.planstate i {
+  font-size: 30px;
+}
+
+.searchform {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.selectbox {
+  display: grid;
+  padding-left: 30px;
+  height: 35px;
+  width: 230px;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbtn {
+  height: 40px;
+  width: 250px;
+  margin-top: 13px;
+  background-color: orange;
+  border: 2px solid orange;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+.searchbtn:hover{
+  background-color: rgb(255, 255, 255);
+  color: orange;
+  transition: all 0.5s ease-in;
+}
+
+/* Feature Box */
+
+.differnce {
+  margin: 0px 50px;
+  padding-top: 200px;
+  height: 700px;
+}
+
+.differnce h1{
+  padding: 0px 400px;
+  margin-bottom: 10px;
+}
+.differnce p{
+  padding: 0px 280px;
+  margin-bottom: 50px;
+}
+
+.serviceboxes {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 30px;
+}
+
+.servicebox{
+  height: 320px;
+  width: 280px;
+  border: 0.3px solid rgb(210, 172, 102);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 35px 25px;
+  border-radius: 6px;
+}
+
+.servicebox:hover {
+  box-shadow: 0px 4px 10px 0px rgba(255, 165, 0, 0.2);
+}
+
+.boxicon{
+  height: 60px;
+  width: 60px;
+  font-size: 35px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(225, 165, 0, 0.2);
+  margin-bottom: 17px;
+  color: orange;
+}
+
+.servicebox h3{
+  margin-bottom: 20px;
+}
+
+.servicebox span{
+  font-size: 1.1rem;
+  color: gray;
+}
+
+/* Popular Booking Cards Area */
+
+.bookingarea{
+  height: 620px;
+  padding: 80px 0px;
+  background-color: rgb(221, 221, 221);
+}
+
+.bookingcontainer{
+  height: 500px;
+  margin: 0px 32px;
+}
+
+
+.routesbtndiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  gap: 45px;
+
+}
+
+.routesbtndiv p{
+  padding-right: 500px;
+  color: gray;
+}
+
+.routesviewbtn {
+  height: 50px;
+  width: 170px;
+  word-spacing: 2px;
+  color: #090d16;
+  background-color: white;
+  border: #090d16 solid;
+  border-radius: 5px;
+}
+
+.routesviewbtn:hover {
+  color: #ffffff;
+  background-color: #090d16;
+  transition: 0.5s;
+}
+
+/* Popular Routes Cards */
+
+.popularroutes {
+  margin-top: 30px;
+  height: 332px;
+  width: 1160px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.routescards {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.routescards:hover {
+  box-shadow: 0px 4px 10px 0px rgba(255, 165, 0, 0.7);
+  margin-top: -5px;
+  margin-bottom: 5px;
+  transition: all 1s;
+}
+
+.routescardheader {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-weight: 600;
+  background-color: #090d16;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.classtag{
+  font-size: small;
+  padding: 5px;
+  color: #090d16;
+  border: 1px solid orange;
+  background-color: orange;
+  border-radius: 15px;
+}
+
+.cardbody {
+  padding: 25px;
+}
+
+.cardbodyfeature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.cardbodyfeature strong{
+  color: black;
+}
+
+.bookingarea hr {
+  height: 1px;
+  width: 100%;
+  color: gray;
+}
+
+.fareprice strong{
+  color: orange;
+}
+
+.cardbookingbtn {
+  height: 40px;
+  width: 80%;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  background-color: #090d16;
+  border: 2px #090d16 solid;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.cardbookingbtn:hover {
+  border: 2px rgba(9, 13, 22, 0.9) solid;
+  background-color: rgba(9, 13, 22, 0.9);
+}
+
+
+hr {
+  height: 4px;
+  width: 100%;
+}
+
+ /* Footer */
+
+.footer {
+    background-color: #090d16;
+    color: #cbd5e1;
+    padding: 70px 0 30px;
+    border-top: 3px solid orange;
+}
+
+.footergrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    margin: 0px 50px 50px 50px;
+}
+
+.footerlogo {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.footerlogo i {
+    color: orange;
+}
+
+.footercolumn p {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 12px;
+}
+
+.sociallinks a {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sociallinks a:hover {
+    background: orange;
+    color: #090d16;
+}
+
+.footercolumn h4 {
+    color: white;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+.footercolumn ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footercolumn ul li a {
+    color: gray;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footercolumn ul li a:hover {
+    color: orange;
+    padding-left: 5px;
+}
+
+.footercolumn ul li {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.copyright {
+  padding-top: 10px;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.develpermark {
+  padding-top: 5px;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.develpermark strong {
+  color: orange;
+}
