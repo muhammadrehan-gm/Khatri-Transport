@@ -8,21 +8,27 @@
 
 .topbar {
   background-color: #090d16;
-  color: rgb(250, 221, 185);
   height: 50px;
+  
 }
 
 .topbar .container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  gap: 25px;
   height: 50px;
-
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: rgb(253, 170, 69);
 }
 
 .email {
-  padding-right: 500px;
+  padding-right: 0;
+  margin-right: auto;
 }
+
+
 
 /* Navigation Bar */
 
@@ -115,35 +121,56 @@
   background-repeat: no-repeat;
 }
 
+.container {
+  text-align: center;
+  color: white;
+}
+
 
 .premium {
-  height: 40px;
-  width: 35%;
-  display: flex;
+  height: auto;
+  width: auto;
+  display: inline-flex;
+  padding: 8px 20px;
   justify-content: center;
   align-items: center;
-  color: rgb(187, 169, 4);
-  background-color: rgba(255, 255, 0, 0.1);
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-  border-color: yellow;
-  border: 10px;
+  gap: 8px;
+  color: rgb(253, 175, 29);
+  background-color: rgba(253, 175, 29, 0.15);
+  border: 1px solid rgb(253 175 29);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 20px;
   border-radius: 30px;
 }
 
+.container h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+h1 span {
+  color: rgb(253 175 29);
+}
 /* Form Box For Booking */
 
 .outersearchbx{
-  height: 200px;
+  min-height: 200px;
+  height: auto;
+  max-width: 1200px;
+  width: 90%;
   display: flex;
   background-color: orange;
   border-radius: 20px;
-  margin: -70px 100px;
+  margin: -70px auto 0 auto ;
 }
 
 .innersearchbox {
-  height: 200px;
+  min-height: 200px;
+  height: auto;
   width: 100%;
+  padding-bottom: 25px;
   background-color: white;
   margin-top: 5px;
   border-radius: 20px;
@@ -196,17 +223,23 @@
 /* Feature Box */
 
 .differnce {
-  margin: 0px 50px;
-  padding-top: 200px;
-  height: 700px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 120px 0 20px 0;
+  height: auto;
 }
 
-.differnce h1{
-  padding: 0px 400px;
+.differnce h1, p{
+  padding: 0;
+  text-align: center;
+}
+
+.differnce h1 {
   margin-bottom: 10px;
 }
-.differnce p{
-  padding: 0px 280px;
+
+.differnce p {
   margin-bottom: 50px;
 }
 
@@ -256,28 +289,30 @@
 /* Popular Booking Cards Area */
 
 .bookingarea{
-  height: 620px;
-  padding: 80px 0px;
+  height: auto;
+  padding: 80px 20px;
   background-color: rgb(221, 221, 221);
 }
 
 .bookingcontainer{
-  height: 500px;
-  margin: 0px 32px;
+  height: auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 
 .routesbtndiv {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 5px;
-  gap: 45px;
+  gap: 20px;
 
 }
 
 .routesbtndiv p{
-  padding-right: 500px;
+  padding: 0;
   color: gray;
 }
 
@@ -301,8 +336,8 @@
 
 .popularroutes {
   margin-top: 30px;
-  height: 332px;
-  width: 1160px;
+  height: auto;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -499,4 +534,128 @@ hr {
 
 .develpermark strong {
   color: orange;
+}
+
+@media (max-width: 1024px) {
+  .searchform {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .servicebox {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .popularroutes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footergrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    height: auto;
+  }
+
+  .topbar .container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .email {
+    margin-right: 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .navsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 18px;
+  }
+
+  .navsection a {
+    padding-left: 0;
+  }
+
+  .herosection{
+    height: auto;
+    padding: 60px 15px 90px 15px;
+  }
+
+  .herosection h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .premium {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+  }
+
+  .searchform {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px 20px;
+    gap: 20px;
+  }
+
+  .searchform label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .selectbox{
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .planstate {
+    padding: 25px 20px 10px 20px;
+  }
+
+  .plansate h1 {
+    font-size: 1.5rem;
+  }
+
+  .serviceboxes{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+  }
+
+  .differnce {
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .popularroutes, .footergrid {
+    grid-template-columns: 1fr;
+  }
+
+  .routesbtndiv {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .searchbtn, .cardbookingbtn {
+    width: 100%;
+    margin-left: 0;
+  }
 }

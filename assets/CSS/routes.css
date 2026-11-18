@@ -8,21 +8,27 @@
 
 .topbar {
   background-color: #090d16;
-  color: rgb(250, 221, 185);
   height: 50px;
+  
 }
 
 .topbar .container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  gap: 25px;
   height: 50px;
-
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: rgb(253, 170, 69);
 }
 
 .email {
-  padding-right: 500px;
+  padding-right: 0;
+  margin-right: auto;
 }
+
+
 
 /* Navigation Bar */
 
@@ -218,4 +224,49 @@ hr {
 
 .develpermark strong {
   color: orange;
+}
+
+@media (max-width: 1024px){
+  .footergrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    height: auto;
+  }
+
+  .topbar .container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .email {
+    margin-right: 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .navsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 18px;
+  }
+
+  .navsection a {
+    padding-left: 0;
+  }
+
+  .footergrid {
+    grid-template-columns: 1fr;
+  }
 }

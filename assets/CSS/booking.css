@@ -8,21 +8,27 @@
 
 .topbar {
   background-color: #090d16;
-  color: rgb(250, 221, 185);
   height: 50px;
+  
 }
 
 .topbar .container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  gap: 25px;
   height: 50px;
-
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: rgb(253, 170, 69);
 }
 
 .email {
-  padding-right: 500px;
+  padding-right: 0;
+  margin-right: auto;
 }
+
+
 
 /* Navigation Bar */
 
@@ -99,104 +105,149 @@
   background-color: rgba(9, 13, 22, 0.9);
 }
 
-
 /* Main Body */
 
+.main {
+  padding: 60px 20px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main .container {
+  min-height: 600px;
+  height: auto;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  border: 0.1px solid rgb(241, 241, 241);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+}
+
+.formheader {
+  margin-bottom: 20px;
+}
+
+.securitytag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 150px;
+  background-color: rgba(255, 165, 0, 0.1);
+  border-radius: 15px;
+  border: 1px solid orange;
+  font-weight: 560;
+  color: orange;
+  margin: 10px 0px 20px 5px;
+}
+
+.formheading {
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 5px;
+}
 
 
 
 hr {
-  height: 4px;
+  height: 2px;
   width: 100%;
+  border-style: none;
+  background-color: rgba(255, 165, 0, 0.3);
 }
 
 /* footer */
 
 .footer {
-    background-color: #090d16;
-    color: #cbd5e1;
-    padding: 70px 0 30px;
-    border-top: 3px solid orange;
+  background-color: #090d16;
+  color: #cbd5e1;
+  padding: 70px 0 30px;
+  border-top: 3px solid orange;
 }
 
 .footergrid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
-    gap: 40px;
-    margin: 0px 50px 50px 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  margin: 0px 50px 50px 50px;
 }
 
 .footerlogo {
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
 }
 
 .footerlogo i {
-    color: orange;
+  color: orange;
 }
 
 .footercolumn p {
-    font-size: 0.9rem;
-    color: gray;
-    margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 20px;
 }
 
 .sociallinks {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 
 .sociallinks a {
-    width: 36px;
-    height: 36px;
-    background: rgba(255, 255, 255, 0.08);
-    color: white;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sociallinks a:hover {
-    background: orange;
-    color: #090d16;
+  background: orange;
+  color: #090d16;
 }
 
 .footercolumn h4 {
-    color: white;
-    font-size: 1.05rem;
-    margin-bottom: 20px;
+  color: white;
+  font-size: 1.05rem;
+  margin-bottom: 20px;
 }
 
 .footercolumn ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footercolumn ul li a {
-    color: gray;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: gray;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footercolumn ul li a:hover {
-    color: orange;
-    padding-left: 5px;
+  color: orange;
+  padding-left: 5px;
 }
 
 .footercolumn ul li {
-    color: gray;
-    font-size: 0.9rem;
+  color: gray;
+  font-size: 0.9rem;
 }
 
 .copyright {
@@ -218,4 +269,49 @@ hr {
 
 .develpermark strong {
   color: orange;
+}
+
+@media (max-width: 1024px){
+  .footergrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    height: auto;
+  }
+
+  .topbar .container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .email {
+    margin-right: 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .navsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 18px;
+  }
+
+  .navsection a {
+    padding-left: 0;
+  }
+
+  .footergrid {
+    grid-template-columns: 1fr;
+  }
 }
