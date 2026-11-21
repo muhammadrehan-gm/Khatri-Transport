@@ -113,7 +113,93 @@ html, body {
 
 /* Main Body */
 
+.contactarea {
+  background-color: rgb(248, 250, 252);
+  padding: 60px 20px;
+}
 
+.contactcontainer {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.contactheader {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border: 1px solid rgb(202, 165, 59);
+  color: rgb(202, 165, 59);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.contactheader h1 {
+  font-size: 2.2rem;
+  color: rgb(15, 23, 42);
+  margin-bottom: 12px;
+}
+
+.contactheader p {
+  font-size: 1rem;
+  color: rgb(100, 116, 139);
+  line-height: 1.6;
+}
+
+/* Contact Info */
+.contactgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.infocard {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(226, 232, 240);
+  border-radius: 10px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.infocard i {
+  font-size: 1.5rem;
+  color: rgb(202, 165, 59);
+  margin-bottom: 12px;
+}
+
+.infocard h3 {
+  font-size: 1.1rem;
+  color: rgb(15, 23, 42);
+  margin-bottom: 6px;
+}
+
+.infocard p {
+  font-size: 0.95rem;
+  color: rgb(100, 116, 139);
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .contactgrid{
+    grid-template-columns: 1fr;
+  }
+
+  .contactheader h1 {
+    font-size: 1.7rem;
+  }
+}
 
 
 hr {
