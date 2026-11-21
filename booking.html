@@ -71,9 +71,114 @@
             <hr>
             <br>
 
-            <form action="">
-                
+
+
+            <form class="booking-form">
+                <div class="section-title">
+                    <i class="fa-solid fa-user"></i> Passenger Information
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fullname">Full Name </label>
+                        <input type="text" id="fullname" name="fullname" placeholder="e.g., Ali Raza" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cnic">CNIC Number </label>
+                        <input type="text" id="cnic" name="cnic" placeholder="42101-1234567-1"
+                            pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" title="Format: 12345-1234567-1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Mobile Number </label>
+                        <input type="tel" id="phone" name="phone" placeholder="0300-1234567" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address </label>
+                        <input type="email" id="email" name="email" placeholder="ali@example.com">
+                    </div>
+                </div>
+                <div class="section-title">
+                    <i class="fa-solid fa-route"></i> Journey Details
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="time slot">Preferred Time Slot </label>
+                        <select id="time-slot" name="time slot" required>
+                            <option value="morning">Morning (08:00 AM)</option>
+                            <option value="night">Night Sleeper (11:30 PM)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="routs">Available Routes</label>
+                        <select id="routs" name="routs" required>
+                            <option value="" disabled selected>Karachi to Islamabad</option>
+                            <option value="r1">Karachi to Islamabad</option>
+                            <option value="r2">Karachi to Lahore</option>
+                            <option value="r3">Islamabad to Lahore</option>
+                            <option value="r4">Lahore to Islamabad</option>
+                            <option value="r5">Lahore to Karachi</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="seats">Number of Seats </label>
+                        <input type="number" id="seats" name="seats" min="1" max="100" value="1" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Special Requests (Optional)</label>
+                    <textarea id="notes" name="notes" rows="3"
+                        placeholder="e.g., Window seat preference, extra luggage, wheelchair assistance..."></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I confirm that the CNIC and passenger details are accurate and agree to Khatri
+                        Transportation's boarding policies.</label>
+                </div>
+                <div class="form-actions">
+                    <button type="reset" id="reset-btn">Clear Form</button>
+                    <button type="submit" id="submit-btn">
+                        <i class="fa-solid fa-ticket">
+
+                        </i> Confirm Booking Request
+                    </button>
+                </div>
             </form>
+
+            <div id="popup-overlay" class="popup-overlay">
+                <div class="popup-card">
+                    <h3>Booking Confirmed</h3>
+                    <p><strong>Passenger:</strong> <span id="pop-name"></span></p>
+                    <p><strong>Route:</strong> <span id="pop-route"></span></p>
+                    <p><strong>Payment:</strong> <span id="pop-payment"></span></p>
+                    <p>After completing payment your ticket will be confirmed and you will get digital copy of your ticket through email.</p>
+                    <button type="button" id="close-popup" class="submit-btn">Close</button>
+                </div>
+            </div>
+
+            <!-- Confirmation Summary (Hidden until submit) -->
+            <div class="confirmation-box" id="confirmationBox" style="display: none;">
+                <div class="confirm-top">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div>
+                        <h3>Booking Request Confirmed</h3>
+                        <p>Reference ID: <strong id="bookingRef"></strong></p>
+                    </div>
+                </div>
+                <div class="confirm-grid" id="confirmGrid"></div>
+                <div class="form-actions">
+                    <button type="button" class="submit-btn" id="bookAgainBtn">
+                        <i class="fa-solid fa-plus"></i> Book Another Journey
+                    </button>
+                </div>
+            </div>
         </div>
 
     </main>
@@ -130,6 +235,7 @@
         <p class="copyright">&copy; 2026 KHATRI Transportation. All rights reserved.</p>
         <p class="develpermark">Developed By <strong>CyberRAP</strong></p>
     </footer>
+    <script src="assets/Javascript/Booking.js"></script>
 </body>
 
 </html>
