@@ -26,7 +26,7 @@
 
         <div class="location-marks">
           <i class="fa-solid fa-location-dot"></i>
-          Lahore . Karachi . Multan . Islamabad
+          Lahore . Karachi . Faisalabad . Islamabad
         </div>
       </div>
     </div>
@@ -86,7 +86,7 @@
       <form action="" class="searchform">
         <label for=""><i class="fa-solid fa-map-pin"></i>From City
           <select name="originselectiom" id="origin" class="selectbox" required>
-            <option value="">All Origins</option>
+            <option value="" disabled selected>All Origins</option>
             <option value="Lahore">Lahore</option>
             <option value="Islamabad">Islamabad</option>
             <option value="Karachi">Karachi</option>
@@ -96,7 +96,7 @@
           <i class="fa-solid fa-location-crosshairs"></i> Destination
 
           <select name="destinationselection" id="destination" class="selectbox" required>
-            <option value="">All Destinations</option>
+            <option value="" disabled selected>All Destinations</option>
             <option value="Islamabad">Islamabad</option>
             <option value="Faislabad">Faislabad</option>
             <option value="Karachi">Karachi</option>
@@ -105,7 +105,7 @@
         </label>
         <label for="">
           <i class="fa-solid fa-calendar-days"></i> Travel Date
-          <input type="date" id="bookingdate" class="selectbox" required />
+          <input type="date" id="traveldate" class="selectbox" required />
         </label>
         <button class="searchbtn">
           <i class="fa-solid fa-magnifying-glass"></i> Search Routes
@@ -329,6 +329,7 @@
     <p class="develpermark">Developed By <strong>CyberRAP</strong></p>
   </footer>
 
+  <script src="assets/Javascript/Home.js"></script>
 </body>
 
 </html>
