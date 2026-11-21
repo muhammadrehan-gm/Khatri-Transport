@@ -6,10 +6,14 @@
   text-decoration: none;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
 .topbar {
   background-color: #090d16;
   height: 50px;
-  
 }
 
 .topbar .container {
@@ -28,14 +32,12 @@
   margin-right: auto;
 }
 
-
-
 /* Navigation Bar */
 
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
   background-color: #ffffff;
   display: flex;
   height: 70px;
@@ -118,6 +120,7 @@
   background-size: cover;
   background-position: center 60%;
   background-image: url(../Images/Bus.jpg);
+  background: linear-gradient(to);
   background-repeat: no-repeat;
 }
 
